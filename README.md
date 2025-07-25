@@ -19,10 +19,10 @@ This microservices project demonstrates asynchronous (event-driven) communicatio
 
 ## Use Cases
 
-### 1️⃣ EMI Payment - Notification Service
+### EMI Payment - Notification Service
 - `emi-payment-service`: Accepts EMI payments and publishes events to Kafka (`emi-payment-success` topic).
 - `notification-service`: Listens for events and sends real-time alerts to users asynchronously (SMS/email/push).
 
-### 2️⃣ Transaction - Report Generator Service
+### Transaction - Report Generator Service
 - `transaction-service`: Sends report generation requests to Kafka (`generate-report` topic).
 - `report-generator-service`: Listens for events and generates downloadable CSV/PDF reports in the background.
